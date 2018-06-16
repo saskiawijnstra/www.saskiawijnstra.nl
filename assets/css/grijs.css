@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*-----------achtergrondkleur grijs-------*/
+
+body {
+	background: rgb(245, 245, 245);
+}
+
+.navbar-default {
+    background: rgb(245, 245, 245);
+}
+
+footer {
+    border-top: 1px solid #fff;
+	background-color: #fff;
+}
+
+footer hr {
+  border-color: #ffffff;
+
+}
