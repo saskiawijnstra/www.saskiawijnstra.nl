@@ -1,10 +1,31 @@
 
+
+
+
+@font-face {
+  font-family: 'Graphikregular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Graphik Regular'), local('Graphik-Regular'), url(assets/fonts/graphik/Graphik-400-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Graphiksemibold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Graphik Semibold'), local('Graphik-Semibold'), url(assets/fonts/graphik/Graphik-600-Semibold.otf) format('opentype');
+}
+
+
+
+
+
+
 /*-----------------------------*/
 
 body {
-    font-family: Montserrat, 'Work Sans', sans-serif;
+    font-family: Graphikregular, 'Work Sans', sans-serif;
     font-style: normal;
-	/*font-weight: 300;*/
     overflow-x: hidden;
 }
 
@@ -15,38 +36,32 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
   font-style: normal;
-  /*font-weight: 300;*/
   letter-spacing: 0.5px;
 }
-/*
+
 h1 {
-    font-size: 62px;
-    padding-bottom: 14px;
-    margin-bottom: 0px;
-}*/
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 400;
+}
 
 h2 {
-  font-size: 32px;
-  line-height: 46px;
+  font-size: 34px;
+  line-height: 53px;
+	font-weight: 400;
 }
 
 h3 {
-  font-size: 26px;
-}
-
-h4 {
-  color: #000000;
-  font-size: 12px;
-  font-weight: normal;
-  letter-spacing: 2px;
+	font-size: 54px;
+	font-weight: 600;
 }
 
 p {
     color: #000;
-    font-size: 15px;
-    /*font-weight: 300;*/
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 30px;
     letter-spacing: 0.2px;
+	font-weight: 400;
 }
 
 strong {
@@ -733,22 +748,6 @@ footer .footer-copyright {
         100%{opacity:1}
     }
 
-/*---------------------------------------
-   Saskia Zelf title ABOUT        
------------------------------------------*/
-
-.mijnnaam {
-	font-size: 40px;
-	font-family: Lora, montserrat, Helvetica, "sans-serif";
-	font-weight: 550;
-	font-style: italic;
-}
-
-.mijnnaamrest {
-	font-size: 25px;
-	font-weight: lighter;
-
-}
 
 /*---------------------------------------
    Saskia Zelf select text niet omdat het moet, maar omdat het kan :)        
