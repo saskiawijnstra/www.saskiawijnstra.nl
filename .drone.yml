@@ -9,4 +9,12 @@ steps:
       from_secret: deploy_token
     registry: rg.fr-par.scw.cloud/ipcloud
     repo: rg.fr-par.scw.cloud/ipcloud/saskia-wijnstra-nl
+- name: deploy
+  image: bitnami/kubectl:latest
+  environment: 
+    KUBETOKEN: 
+      from_secret: kubernetes_token
+    KUBEURL: https://infrastructure.ip-cloud.nl/k8s/clusters/c-jqqtz
+  commands:
+    - 'kubectl --server=$KUBEURL --token=$KUBETOKEN --namespace saskia-wijnstra-nl patch deployment saska-wijnstra -p "{\"spec\": {\"template\": {\"metadata\": { \"labels\": {  \"redeploy\": \"$(date +%s)\"}}}}}"'
 
