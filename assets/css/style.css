@@ -53,7 +53,8 @@ h2 {
 
 h3 {
 	font-size: 54px;
-	font-weight: 600;
+	font-weight: 400;
+	line-height: 65px;
 }
 
 p {
@@ -843,4 +844,12 @@ color: #fff;
 	font-weight: 200;
 	font-style: italic;
 }
+
+.ruimte {
+	margin-top: 8%;
+	margin-bottom: 10%;
+}
+
+
+
 
