@@ -57,6 +57,14 @@ h3 {
 	line-height: 65px;
 }
 
+h4 {
+	color: #7E7E7E;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+	font-weight: 400;
+}
+
 p {
     color: #000;
     font-size: 16px;
