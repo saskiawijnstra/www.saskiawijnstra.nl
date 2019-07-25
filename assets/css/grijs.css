@@ -4,12 +4,14 @@
 /*-----------achtergrondkleur grijs-------*/
 
 body {
-	background: rgb(245, 245, 245);
+	background-color: #F8F7F8;
 }
 
 .navbar-default {
-    background: rgb(245, 245, 245);
+    background: #F8F7F8;
 }
+
+
 
 footer {
     border-top: 1px solid #fff;

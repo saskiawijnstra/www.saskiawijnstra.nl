@@ -27,6 +27,7 @@ body {
     font-family: Graphikregular, 'Work Sans', sans-serif;
     font-style: normal;
     overflow-x: hidden;
+	transition: background-color 1s ease;
 }
 
 
@@ -354,7 +355,7 @@ a:hover, a:active, a:focus {
 
 #portfolio .portfolio-thumb .portfolio-overlay {
   position: absolute;
-  background: #fff;
+/*  background: #fff;*/
   color: #ffffff;
   top: 0;
   left: 0;
