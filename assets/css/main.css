@@ -42,18 +42,20 @@
     transition: all .5s ease-out;
   }
   
-  .slide:nth-child(5) {background-image: url("../work/sprong/slide1/2P1110209.jpg");}
-  .slide:nth-child(7) {background-image: url("../work/sprong/slide1/tumblr_ppula21SJ81y8563ko3_1280.jpg");}
-  .slide:nth-child(4) {background-image: url("../work/sprong/slide1/idea3.png");}
-  .slide:nth-child(2) {background-image: url("../work/sprong/slide1/idea4.png");}
-  .slide:nth-child(1) {background-image: url("../work/sprong/slide1/zw/54520401_2127223257357918_8978362865790484480_o.jpg");}
-  .slide:nth-child(6) {background-image: url("../work/sprong/slide1/apr26afinitydiagram.jpg");}
-  .slide:nth-child(8) {background-image: url("../work/sprong/slide1/mrt15stakeholdermap.jpg");}
-  .slide:nth-child(9) {background-image: url("../work/sprong/slide1/mrt14ideasfunctions5.jpg");}
-.slide:nth-child(10) {background-image: url("../work/sprong/slide1/mrt7contextmap2.jpg");}
-  .slide:nth-child(3) {
-	  background-image: url("../work/sprong/slide1/DSC_0105recht.png");
-	  /*transform: rotate(-90deg*/
-}
+  .slide.sprong:nth-child(5) {background-image: url("../work/sprong/slide1/2P1110209.jpg");}
+  .slide.sprong:nth-child(7) {background-image: url("../work/sprong/slide1/tumblr_ppula21SJ81y8563ko3_1280.jpg");}
+  .slide.sprong:nth-child(4) {background-image: url("../work/sprong/slide1/idea3.png");}
+  .slide.sprong:nth-child(2) {background-image: url("../work/sprong/slide1/idea4.png");}
+  .slide.sprong:nth-child(1) {background-image: url("../work/sprong/slide1/zw/54520401_2127223257357918_8978362865790484480_o.jpg");}
+  .slide.sprong:nth-child(6) {background-image: url("../work/sprong/slide1/apr26afinitydiagram.jpg");}
+  .slide.sprong:nth-child(8) {background-image: url("../work/sprong/slide1/mrt15stakeholdermap.jpg");}
+  .slide.sprong:nth-child(9) {background-image: url("../work/sprong/slide1/mrt14ideasfunctions5.jpg");}
+.slide.sprong:nth-child(10) {background-image: url("../work/sprong/slide1/mrt7contextmap2.jpg");}
+  .slide.sprong:nth-child(3) {background-image: url("../work/sprong/slide1/DSC_0105recht.png");}
+
+
+  .slide.vz:nth-child(1) {background-image: url("../work/vz/41529189_1860824667331113_3393831063640866816_o.jpg");}
+.slide.vz:nth-child(2) {background-image: url("../work/vz/IMG_0140.JPG");}
+
 
   
