@@ -379,10 +379,6 @@ h3 {
     padding: 2px 10px 2px 10px;
 }
 
-.half.container {
-    margin-bottom: 100px;
-}
-
 .filterDiv {
     display: none;
 }
@@ -392,5 +388,18 @@ h3 {
 }
 
 .half.container.filterDiv {
-    height: 1050px;
+    height: 100%;
+}
+
+.half.container {
+    margin-bottom: 50px;
+}
+
+@media (min-width:601px) {
+    .half.container.filterDiv {
+        height: 1050px;
+    }
+    .half.container {
+        margin-bottom: 100px;
+    }
 }
