@@ -3,7 +3,7 @@ $(document).ready(function() {
     var sliding = [], startClientX = [],startPixelOffset = [],pixelOffset = [],currentSlide = [];
     slideCount = [];
 
-    $(".slider").each(function(i, obj) {
+    $(".slides").each(function(i, obj) {
       $(this).on('mousedown touchstart', null, i, slideStart);
       $(this).on('mouseup touchend', null, i, slideEnd);
       $(this).on('mousemove touchmove', null, i, slide);
@@ -13,12 +13,15 @@ $(document).ready(function() {
       pixelOffset.push(0);
       currentSlide.push(0);
       slideCount.push(obj.children.length);
+      console.log("slideCount[" + i + "]: ");
+      console.log(slideCount[i]);
     });
 
     /**
     / Triggers when slide event started
     */
     function slideStart(event) {
+      console.log(event.data);
         // If it is mobile device redefine event to first touch point
         if (event.originalEvent.touches)
             event = event.originalEvent.touches[0];
@@ -56,7 +59,7 @@ $(document).ready(function() {
             // Calculate move distance.
             pixelOffset[event.data] = startPixelOffset[event.data] + deltaSlide / touchPixelRatio;
             // Apply moving and remove animation class
-            $(this).css('transform', 'translateX(' + pixelOffset[event.data] + 'px').removeClass("slider-animate");
+            $(this).css('transform', 'translateX(' + pixelOffset[event.data] + 'px').removeClass("animate");
         }
     }
 
@@ -68,14 +71,14 @@ $(document).ready(function() {
             sliding[event.data] = 0;
             // Calculate which slide need to be in view.
             currentSlide[event.data] = pixelOffset[event.data] < startPixelOffset[event.data] ? currentSlide[event.data] + 1 : currentSlide[event.data] - 1;
-            // Make sure that unexisting slides weren't selected.                                               aantal op laatste slide
+            // Make sure that unexisting slides weren't selected.
             currentSlide[event.data] = Math.min(Math.max(currentSlide[event.data], 0), slideCount[event.data] - 2);
             // Since in this example slide is full viewport width offset can be calculated according to it.
-            pixelOffset[event.data] = currentSlide[event.data] * -($(this).children("img").first().width() + 40);
+            pixelOffset[event.data] = currentSlide[event.data] * -($('.slide').width() + 40);
             // Remove style from DOM (look below)
             // $('#temp').remove();
             // Add animate class to slider and reset transform prop of this class.
-            $(this).addClass('slider-animate').css('transform', '');
+            $(this).addClass('animate').css('transform', '');
             // Add a translate rule dynamically and asign id to it
             $(this).css("transform", "translateX(" + pixelOffset[event.data] + "px)");
             // $('<style id="temp">#slides.animate{transform:translateX(' + pixelOffset[event.data] + 'px)}</style>').appendTo('head');
