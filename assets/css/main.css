@@ -28,3 +28,15 @@
 .slider-animate {
     transition: all .5s ease-out;
 }
+
+
+/*----------SASKIA------------*/
+
+.slider.vz img {
+    /*          %, container width, tot margin*/
+    width: calc(0.33 * (86vw - 60px) - 10rem);
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    cursor: grabbing;
+    pointer-events: none;
+}
